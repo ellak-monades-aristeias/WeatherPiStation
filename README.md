@@ -12,7 +12,7 @@
 Οι νέες δυνατότητες θα είναι οι εξής:
 
 1. Αυτόματη ενεργοποίηση του λογισμικού στο raspberry pi ώστε να ξεκινά με το boot του υπολογιστή αυτόματα. Αυτό είναι χρήσιμο σε περίπτωση που πέσει το ρεύμα.
-https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Ability%20%231%20Auto%20login%20%26%20Auto%20start%20in%20Raspberry%20Pi
+https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Autologin_%26_Autostart_Raspberry%20Pi.md
 
 2. Εμφάνιση των πληροφοριών με σωστό τρόπο, ανεξάρτητα από τις μετρήσεις κάθε raspberry pi. Το τωρινό σύστημα έχει την δυνατότητα να αποθηκεύει στην βάση διαφορετικό πλήθος μετρήσεων ανά raspberry pi. Για παράδειγμα κάποιο raspberry pi μπορεί να έχει μόνο αισθητήρα θερμοκρασίας. Δεν έχει όμως την δυνατότητα να εμφανίζονται σωστά οι μετρήσεις δεν είναι σε όλα τα raspberry pi οι ίδιες.
 
