@@ -16,7 +16,7 @@ sudo nano /etc/inittab
 το νούμερο 38400 μπορείνα είναι 115200 or 57600 or 9600 κτλ.
 και πρόσθεστε το # στην αρχή της γραμμής ώστε να γίνει σχόλιο(comment)
 
-#1:2345:respawn:/sbin/getty 38400 tty1
+\#1:2345:respawn:/sbin/getty 38400 tty1
 
 Βήμα 3ο: Προσθέστε login δυνατότητα στο inittab
 
