@@ -5,12 +5,12 @@ try {
 
     $dbh = new PDO('mysql:dbname='.$dbname.';host='.$servername.';port='.$port, $username, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    //echo 'success connecting to DB!';
+    echo 'success connecting to DB!';
     try {
-        if (isset($_POST["APIkey"]) && isset($_POST["data"])) {
+        if (isset($_GET["APIkey"]) && isset($_POST["data"])) {
             //TODO Check APIkey for validity and security
-           $apiKey = $_POST["APIkey"];
+           $apiKey = $_GET["APIkey"];
+           echo $apiKey;
            $data = $_POST["data"];
 
            echo $data;
