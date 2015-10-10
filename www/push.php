@@ -15,6 +15,7 @@ try {
     }
     //echo '{"Error" :  "Reading APIkey or data. Please check if data is in json form!"}';
 
+       $apiKey = $_GET["APIkey"];
        echo $apiKey;
     $dbh = null;
 } catch (PDOException $e) {
