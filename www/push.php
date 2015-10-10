@@ -9,13 +9,13 @@ try {
     if (isset($_GET["APIkey"]) && isset($_POST["data"])) {
         //TODO Check APIkey for validity and security
        $apiKey = $_GET["APIkey"];
-       echo $apiKey;
        $data = $_POST["data"];
 
        echo $data;
     }
     //echo '{"Error" :  "Reading APIkey or data. Please check if data is in json form!"}';
 
+       echo $apiKey;
     $dbh = null;
 } catch (PDOException $e) {
     echo 'Error sql: ' . $e->getMessage();
