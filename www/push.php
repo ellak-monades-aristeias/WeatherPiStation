@@ -17,6 +17,10 @@ try {
 
        $apiKey = $_GET["APIkey"];
        echo $apiKey;
+
+       $data = $_GET["data"];
+
+       echo $data;
     $dbh = null;
 } catch (PDOException $e) {
     echo 'Error sql: ' . $e->getMessage();
