@@ -8,15 +8,12 @@ try {
 
     //echo 'success connecting to DB!';
     try {
-        if (isset($_GET["APIkey"]) && isset($_GET["data"])) {
+        if (isset($_POST["APIkey"]) && isset($_POST["data"])) {
             //TODO Check APIkey for validity and security
-           $apiKey = $_GET["APIkey"];
-           $data = $_GET["data"];
+           $apiKey = $_POST["APIkey"];
+           $data = $_POST["data"];
 
-           $parsed = json_decode($data, true);
-           echo "debug\n";
-           echo $parsed[Date and time];
-
+           echo $data;
         }
     } catch {
         echo '{"Error" :  "Reading APIkey or data. Please check if data is in json form!"}';
