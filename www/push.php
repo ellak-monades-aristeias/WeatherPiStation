@@ -8,19 +8,14 @@ try {
     echo 'success connecting to DB!';
     if (isset($_GET["APIkey"]) && isset($_POST["data"])) {
         //TODO Check APIkey for validity and security
-       $apiKey = $_GET["APIkey"];
-       $data = $_POST["data"];
+        $apiKey = $_GET["APIkey"];
+        $data = $_GET["data"];
 
-       echo $data;
+        $stmt = $dbh->prepare("INSERT INTO `weatherDB` (`RPi_id`, `jsonData`) VALUES (:id, :jsonData)");
+        $stmt->bindParam(':id', $apiKey);
+        $stmt->bindParam(':jsonData', $data);
+        $stmt->execute();
     }
-    //echo '{"Error" :  "Reading APIkey or data. Please check if data is in json form!"}';
-
-       $apiKey = $_GET["APIkey"];
-       echo $apiKey;
-
-       $data = $_GET["data"];
-
-       echo $data;
     $dbh = null;
 } catch (PDOException $e) {
     echo 'Error sql: ' . $e->getMessage();
