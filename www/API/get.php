@@ -11,13 +11,15 @@ if (isset($_GET["rpiID"])) {
     mysql_select_db($dbname,$db);
     $sql = "SELECT jsonData FROM `weatherDB` WHERE RPi_id='" . $rpiID . "' LIMIT 0,3";
     $result = mysql_query($sql, $db);
-    //$response = array();
-    //while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-    //    $row_array[0] = $row[0];
-    //    array_push($response,$row_array);
-    //}
-    //echo json_encode($response);
-    echo $result;
+    $response = array();
+    while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+        echo $row;
+        echo $row[0];
+        $row_array[0] = $row[0];
+        array_push($response,$row_array);
+    }
+    echo json_encode($response);
+    //echo $result;
     fclose($db);
 } else {
     echo 'Please provide a legal Raspberry Pi ID.';
