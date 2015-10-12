@@ -15,6 +15,7 @@ try {
         $stmt->bindParam(':id', $apiKey);
         $stmt->bindParam(':jsonData', $data);
         $stmt->execute();
+        echo 'Debug1';
     }
     $dbh = null;
 } catch (PDOException $e) {
