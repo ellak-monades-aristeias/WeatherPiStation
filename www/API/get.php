@@ -18,8 +18,8 @@ if (isset($_GET["rpiID"])) {
         $row_array[0] = $row[0];
         array_push($response,$row_array);
     }
-    echo $response;
-    //echo $result;
+    //echo $response;
+    echo var_dump($result);
     fclose($db);
 } else {
     echo 'Please provide a legal Raspberry Pi ID.';
