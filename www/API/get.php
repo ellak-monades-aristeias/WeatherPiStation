@@ -13,12 +13,10 @@ if (isset($_GET["rpiID"])) {
     $result = mysql_query($sql, $db);
     $response = array();
     while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-        echo $row . '\n';
-        echo $row_array . '\n';
-        $row_array = $row;
+        $row_array[0] = $row[0];
         array_push($response,$row_array);
     }
-    echo $response[0];
+    echo json_encode($response);
     fclose($db);
 } else {
     echo 'Please provide a legal Raspberry Pi ID.';
