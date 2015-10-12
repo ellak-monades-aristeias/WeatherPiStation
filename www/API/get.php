@@ -1,23 +1,23 @@
 <?php
 include_once '../config.php';
 
-try {
-
-    $dbh = new PDO('mysql:dbname='.$dbname.';host='.$servername.';port='.$port, $username, $password);
-    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    if (isset($_GET["rpiID"])) {
-        //TODO Check APIkey for validity and security
-        $rpiID = $_GET["rpiID"];
-        $stmt = $dbh->prepare("SELECT jsonData FROM `weatherDB` WHERE RPi_id=:id LIMIT 0,3");
-        $stmt->bindParam(':id', $rpiID);
-        $result = $stmt->execute();
-        echo $result;
-
-
-
+if (isset($_GET["rpiID"])) {
+    //TODO Check APIkey for validity and security
+    $rpiID = $_GET["rpiID"];
+    $db = mysql_connect($servername,$username,$password);
+    if (!$db) {
+        die('Could not connect to db: ' . mysql_error());
     }
-    $dbh = null;
-} catch (PDOException $e) {
-    echo 'Error sql: ' . $e->getMessage();
+    mysql_select_db($dbname,$db);
+    $sql = "SELECT jsonData FROM `weatherDB` WHERE RPi_id='" . $rpiID . "' LIMIT 0,3";
+    $result = mysql_query($sql, $db);
+    $response = array();
+    while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+        $row_array[0] = $row[0];
+        array_push($response,$row_array);
+    }
+    echo $response;
+    fclose($db);
+
 }
 ?>
