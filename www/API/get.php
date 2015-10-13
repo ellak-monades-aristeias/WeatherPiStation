@@ -16,7 +16,7 @@ if (isset($_GET["rpiID"])) {
         $row_array = $row[0];
         array_push($response,$row_array);
     }
-    echo array_values($response);
+    print_r(array_values($response));
     //echo $result;
     fclose($db);
 } else {
