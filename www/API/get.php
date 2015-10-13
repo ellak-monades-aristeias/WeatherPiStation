@@ -13,9 +13,7 @@ if (isset($_GET["rpiID"])) {
     $result = mysql_query($sql, $db);
     $response = array();
     while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-        echo $row;
-        echo $row[0];
-        $row_array[0] = $row[0];
+        $row_array = $row[0];
         array_push($response,$row_array);
     }
     echo $response;
