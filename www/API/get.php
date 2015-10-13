@@ -12,7 +12,7 @@ if (isset($_GET["rpiID"])) {
     $sql = "SELECT jsonData FROM `weatherDB` WHERE RPi_id='" . $rpiID . "' LIMIT 0,3";
     $result = mysql_query($sql, $db);
     $response = array();
-    while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
         $row_array = $row[0];
         array_push($response,$row_array);
     }
