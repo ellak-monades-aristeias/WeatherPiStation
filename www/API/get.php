@@ -18,10 +18,9 @@ if (isset($_GET["rpiID"])) {
     }
     $resp = '';
     foreach ($response as $value) {
-        $resp = $value . '\n';
+        $resp .= $value . '\n';
     }
     echo $resp;
-
     fclose($db);
 } else {
     echo 'Please provide a legal Raspberry Pi ID.';
