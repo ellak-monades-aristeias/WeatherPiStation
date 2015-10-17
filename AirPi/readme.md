@@ -1,6 +1,6 @@
 Airpi configuration.
 
-First, we myst install the airpi software. Run:
+First, we must install the airpi software. Run:
 
 git clone http://github.com/haydnw/airpi AirPi
 cd AirPi
