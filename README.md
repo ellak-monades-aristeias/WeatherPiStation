@@ -25,6 +25,7 @@ https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Autologi
 6. Συνδυασμοί των αναζητήσεων 3, 4, 5.
 
 7. Οι λειτουργίες 2, 3, 4, 5, 6 να είναι διαθέσιμες και μέσω html (για προβολή σε webbrowser) αλλά και σε μορφή json (για να είναι διαθέσιμες σε άλλα προγράμματα μέσω api).
+https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API
 
 
 ## Που απευθύνεται
