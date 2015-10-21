@@ -19,7 +19,7 @@ if (isset($_GET["rpiID"])) {
     }
     $resp = '';
     foreach ($response as $value) {
-        $resp .= $value . "\n";
+        $resp .= $value . ",";
     }
     echo $resp;
     fclose($db);
