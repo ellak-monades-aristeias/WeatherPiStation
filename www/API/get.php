@@ -1,5 +1,6 @@
 <?php
 include_once '../config.php';
+header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 if (isset($_GET["rpiID"])) {
     //TODO Check APIkey for validity and security
