@@ -12,7 +12,7 @@ def sendData(dataDict, rasId):
     except:
         pass
 
-Qdef main(fileName, rasId):
+def main(fileName, rasId):
     file = open(fileName, 'r');
     for line in file:
         jl = json.loads(line);
