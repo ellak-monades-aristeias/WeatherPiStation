@@ -42,7 +42,7 @@
 # Παραδοτέα
 
 
-| Παραδοτέο | Σύντομη περιγραφή | URL |
+| Παραδοτέο | Σύντομη περιγραφή       | URL |
 |-----------|-------------------------|-----|
 | 1 | Αγορά υλικού: Raspberry pi, Airpi. | https://github.com/ellak-monades-aristeias/thermostatPI/blob/master/README.md |
 | 2 | Δυνατότητα 1| https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Autologin_%26_Autostart_Raspberry%20Pi.md |
