@@ -45,9 +45,9 @@
 | Παραδοτέο | Σύντομη περιγραφή | URL |
 |-----------|-------------------|-----|
 | 1 | Αγορά υλικού: Raspberry pi, Airpi. | https://github.com/ellak-monades-aristeias/thermostatPI/blob/master/README.md |
-| 2 | Δυνατότητα 1: Αυτόματη ενεργοποίηση του λογισμικού στο raspberry pi ώστε να ξεκινά με το boot του υπολογιστή αυτόματα. Αυτό είναι χρήσιμο σε περίπτωση που πέσει το ρεύμα.| https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Autologin_%26_Autostart_Raspberry%20Pi.md |
-| 3 | Δυνατότητα 2 : Εμφάνιση των πληροφοριών με σωστό τρόπο, ανεξάρτητα από τις μετρήσεις κάθε raspberry pi. Το τωρινό σύστημα έχει την δυνατότητα να αποθηκεύει στην βάση διαφορετικό πλήθος μετρήσεων ανά raspberry pi. Για παράδειγμα κάποιο raspberry pi μπορεί να έχει μόνο αισθητήρα θερμοκρασίας. Δεν έχει όμως την δυνατότητα να εμφανίζονται σωστά οι μετρήσεις δεν είναι σε όλα τα raspberry pi οι ίδιες. | https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API |
-| 4 | Δυνατότητα 7 : Οι λειτουργίες 2, 3, 4, 5, 6 να είναι διαθέσιμες και μέσω html (για προβολή σε webbrowser) αλλά και σε μορφή json (για να είναι διαθέσιμες σε άλλα προγράμματα μέσω api). | https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API |
+| 2 | Δυνατότητα 1| https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Autologin_%26_Autostart_Raspberry%20Pi.md |
+| 3 | Δυνατότητα 2 | https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API |
+| 4 | Δυνατότητα 7  | https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API |
 | 5 | Δυνατότητα 3 : | https://github.com/ellak-monades-aristeias/ |
 | 6 | Δυνατότητα 4 : | https://github.com/ellak-monades-aristeias/ |
 | 7 | Δυνατότητα 5 : | https://github.com/ellak-monades-aristeias/ |
