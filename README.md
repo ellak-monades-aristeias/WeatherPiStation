@@ -45,14 +45,14 @@
 | Παραδοτέο | Σύντομη περιγραφή       | URL |
 |-----------|-------------------------|-----|
 | 1 | Αγορά υλικού: Raspberry pi, Airpi. | |
-| 2 | Δυνατότητα 1| https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Autologin_%26_Autostart_Raspberry%20Pi.md |
+| 2 | Δυνατότητα 1 | https://github.com/ellak-monades-aristeias/WeatherPiStation/blob/master/Autologin_%26_Autostart_Raspberry%20Pi.md |
 | 3 | Δυνατότητα 2 | https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API |
-| 4 | Δυνατότητα 7  | https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API |
-| 5 | Δυνατότητα 3 : | https://github.com/ellak-monades-aristeias/ |
-| 6 | Δυνατότητα 4 : | https://github.com/ellak-monades-aristeias/ |
-| 7 | Δυνατότητα 5 : | https://github.com/ellak-monades-aristeias/ |
-| 8 | Δυνατότητα 6 : | https://github.com/ellak-monades-aristeias/ |
+| 4 | Δυνατότητα 7 | https://github.com/ellak-monades-aristeias/WeatherPiStation/tree/master/www/API |
+| 5 | Δυνατότητα 3 | https://github.com/ellak-monades-aristeias/ |
+| 6 | Δυνατότητα 4 | https://github.com/ellak-monades-aristeias/ |
+| 7 | Δυνατότητα 5 | https://github.com/ellak-monades-aristeias/ |
+| 8 | Δυνατότητα 6 | https://github.com/ellak-monades-aristeias/ |
 
 
 
-> Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την [ΕΛ/ΛΑΚ](https://ellak.gr/)
+> Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την [ΕΕΛ/ΛΑΚ](https://ellak.gr/)
