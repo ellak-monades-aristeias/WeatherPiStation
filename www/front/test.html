@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                /*
+                $("#div1").load("https://weatherpistation-mbalamat.rhcloud.com/API/get.php?rpiID=rpi-demo1", function(responseTxt, statusTxt, xhr){
+                    if(statusTxt == "success"){
+                        alert("External content loaded successfully!");
+                    }
+                    if(statusTxt == "error"){
+                        alert("Error: " + xhr.status + ": " + xhr.statusText);
+                    }
+                });
+                */
+                //$.get("https://weatherpistation-mbalamat.rhcloud.com/API/get.php?rpiID=rpi-demo1", function( json_response) {
+                /*
+                $("#div1").load("https://weatherpistation-mbalamat.rhcloud.com/API/get.php?rpiID=rpi-demo1", function( json_response) {
+                    var json = JSON.parse( json_response );
+                    for (var key in json){
+                        alert("success!");
+                    }
+                });
+                */
+                var xmlhttp = new XMLHttpRequest(), json;
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState === 4 && xmlhttp.status === '200'){
+                        console.log('Working');
+                    }
+                }
+                xmlhttp.open('GET', 'https://weatherpistation-mbalamat.rhcloud.com/API/get.php?rpiID=rpi-demo1', true);
+                xmlhttp.send();
+            });
+        });
+        </script>
+    </head>
+    <body>
+
+    <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+    <button>Get External Content</button>
+
+</body>
+</html>
