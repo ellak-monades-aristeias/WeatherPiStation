@@ -9,3 +9,4 @@ sudo /bin/bash install.sh
 add the following line in the end of ~/.profile
 
 PATH=/home/pi/AirPi:$PATH
+
