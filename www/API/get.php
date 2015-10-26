@@ -17,10 +17,12 @@ if (isset($_GET["rpiID"])) {
         $row_array = $row[0];
         array_push($response,$row_array);
     }
-    $resp = '';
+    $resp = '{"data": [';
     foreach ($response as $value) {
         $resp .= $value . ",";
     }
+    $resp = substr($resp, 0, -1);
+    $resp .= ']}';
     echo $resp;
     fclose($db);
 } else {
