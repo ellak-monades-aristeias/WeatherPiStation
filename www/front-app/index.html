@@ -3,18 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>WeatherPiStation</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script type="text/javascript" src="./charts.js"></script>
     </head>
     <body>
 
     <div class="container">
         <div class="jumbotron">
           <h1>WeatherPiStation!</h1>
-            <p>Αυτή είναι η σελίδα αναπαράστασης των δεδομένων που έχουν συλλέξει οι μετεωρολογικοί σταθμοί του Έργου Ανοιχτού Λογισμικού WeatherPiStation. Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την <a href="https://ma.ellak.gr/">ΕΛ/ΛΑΚ</a></p>
+            <p>Αυτή είναι η σελίδα αναπαράστασης των δεδομένων που έχουν συλλέξει οι μετεωρολογικοί σταθμοί του Έργου Ανοιχτού Λογισμικού WeatherPiStation. Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την <a href="https://ma.ellak.gr/">ΕEΛ/ΛΑΚ</a></p>
               <p><a class="btn btn-primary btn-lg" href="https://github.com/ellak-monades-aristeias/WeatherPiStation" role="button">Μάθετε περισσότερα</a></p>
               </div>
     <main>
@@ -43,7 +44,6 @@
     <button type="button" onclick="makeChart()" class="btn btn-primary btn-block">Φτιάξε το γράφημα</button>
     <br/>
     <canvas id="myChart" width="400" height="400"></canvas>
-    <script type="text/javascript" src="./charts.js"></script>
     </main>
     </div>
     </body>
