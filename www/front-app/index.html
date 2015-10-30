@@ -11,54 +11,39 @@
         <script type="text/javascript" src="./charts.js"></script>
     </head>
     <body>
-
-    <div class="container">
-        <div class="jumbotron">
-          <h1>WeatherPiStation!</h1>
-            <p>Αυτή είναι η σελίδα αναπαράστασης των δεδομένων που έχουν συλλέξει οι μετεωρολογικοί σταθμοί του Έργου Ανοιχτού Λογισμικού WeatherPiStation. Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την <a href="https://ma.ellak.gr/">ΕEΛ/ΛΑΚ</a></p>
-              <p><a class="btn btn-primary btn-lg" href="https://github.com/ellak-monades-aristeias/WeatherPiStation" role="button">Μάθετε περισσότερα</a></p>
-              </div>
-    <main>
-        <p>Παρακαλώ επιλέξτε παρακάτω την μονάδα-σταθμό RaspberryPi+AirPi από την οποία θέλετε να δείτε δεδομένα, τον τύπο μέτρησης (θερμοκρασία, υγρασία, πίεση) καθώς και τον αριθμό των τελευταίων μετρήσεων που θέλετε να περιλαμβάνεται στο γράφημα.</p>
-    <h2 class="page-header">Επιλογές Μετρήσεων</h2>
-    <div class="form-group">
-          <label for="sel1">Σταθμός Μετρήσεων (επιλέξτε έναν):</label>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>WeatherPiStation!</h1>
+                <p>Αυτή είναι η σελίδα αναπαράστασης των δεδομένων που έχουν συλλέξει οι μετεωρολογικοί σταθμοί του Έργου Ανοιχτού Λογισμικού WeatherPiStation. Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την <a href="https://ma.ellak.gr/">ΕEΛ/ΛΑΚ</a></p>
+                <p><a class="btn btn-primary btn-lg" href="https://github.com/ellak-monades-aristeias/WeatherPiStation" role="button">Μάθετε περισσότερα</a></p>
+            </div>
+            <main>
+                <p>Παρακαλώ επιλέξτε παρακάτω την μονάδα-σταθμό RaspberryPi+AirPi από την οποία θέλετε να δείτε δεδομένα, τον τύπο μέτρησης (θερμοκρασία, υγρασία, πίεση) καθώς και τον αριθμό των τελευταίων μετρήσεων που θέλετε να περιλαμβάνεται στο γράφημα.</p>
+            <h2 class="page-header">Επιλογές Μετρήσεων</h2>
+            <div class="form-group">
+            <label for="sel1">Σταθμός Μετρήσεων (επιλέξτε έναν):</label>
                 <select class="form-control" id="sel1">
-                        <option>rpi-demo1</option>
-                                <option>rpi-demo2</option>
-                                                      </select>
-          <label for="sel2">Τύπος Μέτρησης (επιλέξτε έναν):</label>
+                    <option>rpi-demo1</option>
+                    <option>rpi-demo2</option>
+                </select>
+            <label for="sel2">Τύπος Μέτρησης (επιλέξτε έναν):</label>
                 <select class="form-control" id="sel2">
-                        <option>Θερμοκρασία</option>
-                                <option>Υγρασία</option>
-                                    <option>Πίεση</option>
-                                                      </select>
-          <label for="sel3">Αριθμός τελευταίων μετρήσεων (επιλέξτε έναν):</label>
+                    <option>Θερμοκρασία</option>
+                    <option>Υγρασία</option>
+                    <option>Πίεση</option>
+                </select>
+            <label for="sel3">Αριθμός τελευταίων μετρήσεων (επιλέξτε έναν):</label>
                 <select class="form-control" id="sel3">
-                        <option>5</option>
-                                <option>10</option>
-                                    <option>15</option>
-                                    <option>20</option>
-                                                      </select>
-    <br/>
-    <button type="button" onclick="makeChart()" class="btn btn-primary btn-block">Φτιάξε το γράφημα</button>
-    <br/>
-    <canvas id="myChart" width="400" height="400"></canvas>
-    </main>
-<div class="cols clearfix">
-<div class="sponsor col span4 espa">
-<a href="#"><img src="https://ma.ellak.gr/wp-content/themes/ma_ellak/images/logo-espa.png" alt="" height="51" width="347"></a>
-</div>
-<div class="sponsor col span2 grnet bordered">
-<a href="https://www.grnet.gr/"><img src="https://ma.ellak.gr/wp-content/themes/ma_ellak/images/logo-grnet.png" alt="" height="43" width="89"></a>
-</div>
-<div class="sponsor col span2 ministryofeducation bordered">
-<a href="http://www.minedu.gov.gr/"><img src="https://ma.ellak.gr/wp-content/themes/ma_ellak/images/logo-ministryofeducation.png" alt="" height="31" width="171"></a>
-</div>
-<div class="colophon col span4 gray bordered">
-<p>Η <strong><u>Διαδικτυακή Πύλη των Μονάδων Αριστείας</u></strong> είναι υπο-έργο της πράξης <strong><u>"Ηλεκτρονικές Υπηρεσίες για την Ανάπτυξη και Διάδοση του Ανοιχτού Λογισμικού"</u></strong> που υλοποιείται από το Εθνικό Δίκτυο Έρευνας και Τεχνολογίας. Η πράξη εντάσσεται στο Επιχειρησιακό Πρόγραμμα <strong><u>"Ψηφιακή Σύγκλιση" του ΕΣΠΑ</u></strong> (με τη συγχρηματοδότηση της Ελλάδας και της Ευρωπαϊκής Ένωσης - Ευρωπαϊκό Ταμείο Περιφερειακής Ανάπτυξης).</p>
-</div>
-                                                                                                                                                                              </div>
-    </div>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                </select>
+            <br/>
+            <button type="button" onclick="makeChart()" class="btn btn-primary btn-block">Φτιάξε το γράφημα</button>
+            <br/>
+            <canvas id="myChart" width="500" height="400"></canvas>
+            </main>
+        </div>
     </body>
 </html>
