@@ -54,6 +54,3 @@
 | 7 | Δυνατότητα 5 | http://weatherpistation-mbalamat.rhcloud.com/front-app/ |
 | 8 | Δυνατότητα 6 | http://weatherpistation-mbalamat.rhcloud.com/front-app/ |
 
-
-
-> Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την [ΕΕΛ/ΛΑΚ](https://ellak.gr/)
