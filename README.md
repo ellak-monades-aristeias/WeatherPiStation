@@ -76,3 +76,9 @@
 | 7 | Δυνατότητα 5 | http://weatherpistation-mbalamat.rhcloud.com/front-app/ |
 | 8 | Δυνατότητα 6 | http://weatherpistation-mbalamat.rhcloud.com/front-app/ |
 
+## Description in English
+
+The WeatherPiStation project is a meteorological data collection system, based on the raspberry pi and kit AirPi (http://airpi.es), including low cost sensors. The system has the ability to take measurements (e.g., temperature, humidity, etc.) and then with a python script developed by our team sends them to a central server. To send measurement needs raspberry id and a password, as not everyone can send data to a central server. The central server can receive data through api many raspberry pi and stores them in a table of mysql. The server host has some script php for displaying such data in html.
+This project, adding new features such as automatic activation of the software in raspberry pi to start automatically with the boot the computer (this is useful in cases of power failure). Display the information in a proper way regardless of measurements each raspberry pi , displaying measurements from specific raspberri pi (search by id). Display only specific type of measurement (search by the type of measurement) and display measurements between certain dates (search by year). Finally measurements will be in the form json (to be available in other programs and applications via api).
+
+
